@@ -32,20 +32,31 @@ This project is part of the AWS AI/ML Scholarship Program Nanodegree - AI Progra
    pip install -r requirements.txt
 ```
 
-3. Ensure all required files are in the project directory.
-
-4. Run the program using the command:
+3. Run individual models:
 ```
    python check_images.py --dir pet_images/ --arch [architecture] --dogfile dognames.txt
 ```
    Replace `[architecture]` with `resnet`, `alexnet`, or `vgg`.
 
-5. Repeat for each architecture and compare results.
-
-6. Or run the program all at once using the below command:
+4. Or run all models at once:
 ```
    sh run_models_batch.sh
 ```
+
+## Project Results
+After evaluating three CNN architectures on 40 images (30 dog images and 10 non-dog images), here are the key findings:
+
+| Model   | Overall Match | Dog Detection | Breed Accuracy | Non-Dog Detection |
+|---------|---------------|---------------|----------------|-------------------|
+| VGG     | 87.5%        | 100%          | 93.3%         | 100%             |
+| ResNet  | 82.5%        | 100%          | 90.0%         | 90.0%            |
+| AlexNet | 75.0%        | 100%          | 80.0%         | 100%             |
+
+VGG architecture demonstrated the best performance with:
+- Highest overall match rate (87.5%)
+- Perfect dog detection accuracy (100%)
+- Best breed classification accuracy (93.3%)
+- Perfect non-dog detection (100%)
 
 ## Acknowledgments
 - AWS AI/ML Scholarship Program
