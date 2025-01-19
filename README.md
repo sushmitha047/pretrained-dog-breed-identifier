@@ -22,24 +22,30 @@ This project is part of the AWS AI/ML Scholarship Program Nanodegree - AI Progra
 
 ## How to Run
 1. Clone the repository:
+```
    git clone https://github.com/sushmitha047/pretrained-dog-breed-identifier.git
    cd pretrained-dog-breed-identifier
-
+```
 
 2. Install the required dependencies:
+```
    pip install -r requirements.txt
+```
 
 3. Ensure all required files are in the project directory.
 
 4. Run the program using the command:
+```
    python check_images.py --dir pet_images/ --arch [architecture] --dogfile dognames.txt
-
+```
    Replace `[architecture]` with `resnet`, `alexnet`, or `vgg`.
 
 5. Repeat for each architecture and compare results.
 
 6. Or run the program all at once using the below command:
+```
    sh run_models_batch.sh
+```
 
 ## Acknowledgments
 - AWS AI/ML Scholarship Program
